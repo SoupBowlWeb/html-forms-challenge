@@ -5,24 +5,24 @@
   <title>HTML Forms Challenge</title>
 </head>
 <body>
-  <form action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST">
+  <form action="http://174.129.248.23/brainstation/files/submittingforms.php" method="GET">
 
-    <p>Username:</p>
-    <input type="text" name="user" />
-
-    <br><br>
-
-    <p>Bio:</p>
-    <textarea name="bio"></textarea>
-
-    <br><br>
-    
-    <input type="checkbox" name="agree" /> Agree?
+    <label for="username">Username:</label>
+    <input type="text" name="user" id="username" />
 
     <br><br>
 
-    <p>City:</p>
-    <select name="city">
+    <label for="bio">Bio:</label>
+    <textarea name="bio" id="bio"></textarea>
+
+    <br><br>
+
+    <input type="checkbox" name="agree" id="agree" /> <label for="agree">Agree?</label>
+
+    <br><br>
+
+    <label for="city">City:</label>
+    <select name="city" id="city">
       <option value="Kitchener">Kitchener</option>
       <option value="Waterloo">Waterloo</option>
       <option value="Cambridge">Cambridge</option>
@@ -31,9 +31,9 @@
     <br><br>
 
     <p>Gender:</p>
-    <input type="radio" name="gender" value="Male" /> Male
+    <input type="radio" name="gender" id="male" value="Male" /> <label for="male">Male</label>
     <br />
-    <input type="radio" name="gender" value="Female" /> Female
+    <input type="radio" name="gender" id="female" value="Female" /> <label for="female">Female</label>
 
     <br><br>
 
