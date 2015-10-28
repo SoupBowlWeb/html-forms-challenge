@@ -6,20 +6,31 @@
 </head>
 <body>
   <form action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST">
-    <input type="text" name="name" />
 
+    <p>Username:</p>
+    <input type="text" name="user" />
+
+    <p>Bio:</p>
     <textarea name="bio"></textarea>
 
+    <p>Do you agree?</p>
     <input type="checkbox" name="agree" />
 
+    <p>City:</p>
     <select name="city">
       <option value="Kitchener">Kitchener</option>
       <option value="Waterloo">Waterloo</option>
       <option value="Cambridge">Cambridge</option>
     </select>
 
-    <input type="radio" name="gender" value="Male" />
-    <input type="radio" name="gender" value="Female" />
+    <p>Gender:</p>
+    <input type="radio" name="gender" value="Male" /> Male
+    <br />
+    <input type="radio" name="gender" value="Female" /> Female
+
+    <br>
+
+    <button type="submit">Send This Data!</button>
   </form>
 </body>
 </html>
