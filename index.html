@@ -17,12 +17,13 @@
 
     <br><br>
 
-    <input type="checkbox" name="agree" id="agree" /> <label for="agree">Agree?</label>
+    <input type="checkbox" name="agree" id="agree" value="Yes Sir" /> <label for="agree">Agree?</label>
 
     <br><br>
 
     <label for="city">City:</label>
-    <select name="city" id="city">
+    <select name="city" id="city" required>
+      <option value="">Please Select...</option>
       <option value="Kitchener">Kitchener</option>
       <option value="Waterloo">Waterloo</option>
       <option value="Cambridge">Cambridge</option>
@@ -31,7 +32,7 @@
     <br><br>
 
     <p>Gender:</p>
-    <input type="radio" name="gender" id="male" value="Male" /> <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="Male" required /> <label for="male">Male</label>
     <br />
     <input type="radio" name="gender" id="female" value="Female" /> <label for="female">Female</label>
 
